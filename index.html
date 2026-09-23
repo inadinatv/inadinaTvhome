@@ -1710,7 +1710,7 @@
         </div>
     </div>
 
-<script>{{DATA_PLACEHOLDER}}</script>
+<!-- DATA_PLACEHOLDER kaldırıldı: GitHub statik dağıtımında geçersiz JavaScript üretmesini önler. -->
 
 <script>
     // ===================================================
@@ -1936,7 +1936,7 @@
     // ===================================================
     function escapeHtml(value) {
         return String(value || '').replace(/[&<>"']/g, function(c) {
-            return {'&':'&','<':'<','>':'>','"':'"',"'":'''}[c];
+            return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
         });
     }
     function escapeAttr(value) { return escapeHtml(value); }
