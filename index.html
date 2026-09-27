@@ -1207,7 +1207,16 @@
                 padding: 0;
             }
             .online-badge,
-            .telegram-btn { display: none; }
+            .telegram-btn {
+                display: inline-flex;
+            }
+            .online-badge {
+                width: auto;
+                min-width: 34px;
+                padding: 0 6px;
+                gap: 4px;
+                font-size: 0.7rem;
+            }
             .app-container {
                 padding-top: calc(70px + env(safe-area-inset-top));
                 padding-left: 10px;
@@ -1224,8 +1233,8 @@
 
         @media (max-width: 380px) {
             .top-bar-right { gap: 3px; }
-            .top-bar-right > .ctrl-btn:first-child { display: none; }
             .app-logo { font-size: 0.9rem; }
+            .online-badge { padding: 0 5px; }
         }
     </style>
 </head>
